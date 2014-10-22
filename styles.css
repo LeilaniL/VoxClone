@@ -1,0 +1,161 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.grid {
+    width: 100%;
+}
+
+.row {
+    margin-bottom: 1em;
+}
+.grid, .row, [class*="-col"] {
+    padding: 0;
+    margin: 0;
+}
+.grid:after, .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Coloring Code */
+.grid {
+    background-color: #999;
+}
+
+.row {
+    background-color: #BBB;
+}
+
+[class*="-col"] {
+    background-color: #EEE;
+}
+.row {
+  margin-bottom: 1em;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+[class*="-col"] {
+  float: left;
+  margin-right: 1%;
+}
+
+[class*="-col"]:last-child {
+    margin-right: 0;
+}
+.eight-col {
+    width: 100%;
+}
+
+.seven-col {
+    width: 87.25%;
+}
+
+.six-col {
+    width: 74.5%;
+}
+
+.five-col {
+    width: 61.75%;
+}
+
+.four-col {
+    width: 49%;
+}
+
+.three-col {
+    width: 36.25%;
+}
+
+.two-col {
+    width: 23.5%;
+}
+
+.one-col {
+    width: 10.75%;
+}
+/* Grid Code */
+.grid {
+    /* grid code goes here... */
+}
+
+/* rest of grid code goes here... */
+
+/* Coloring Code */
+.grid {
+    background-color: #999;
+}
+
+.row {
+    background-color: rgba(95,118,133,0.8);
+}
+
+[class*="-col"] {
+    background-color: #EEE;
+}
+.one-offset {
+  margin-left: 12.25%
+}
+.two-offset {
+  margin-left: 24.50%
+}
+.three-offset {
+  margin-left: 36.75%
+}
+@media all and (max-width: 768px) {
+  [class*="-col"] {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .row:last-child > [class*="-col"]:last-child {
+    margin-bottom: 0;
+  }
+
+  [class*="-offset"] {
+    margin-left: 0;
+  }
+
+  .row {
+    margin: 0;
+  }
+}
+.grid {
+  max-width: 1800px;
+}
+.top-bar {
+  background-color: rgba(95,118,133,1);
+  height: 3em;
+  role="navigation";
+}
+
+.top-bar .logo {
+  margin: 0.25em;
+}
+.logo {
+  display: inline-block;
+  color: yellow;
+  font-family: Georgia;
+  font-size: 2em;
+  &:before {
+    content: "\e010";
+  }
+}
+.right {
+  float: right;
+}
+.top-bar li {
+  list-style-type: none;
+  color: white;
+  margin-right: .5em;
+}
+body {
+  background: rgba(95,118,133,0.8);
+}
+.cardstack {
+  background: #fff200;
+  width: 100%;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+}
